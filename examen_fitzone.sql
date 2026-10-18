@@ -1,3 +1,5 @@
+CREATE DATABASE examen_fitzone;
+
 drop table socios;
 
 create table socios( 
@@ -13,7 +15,6 @@ constraint socios_pk primary key(id_socio)
 
 SELECT * FROM socios;
 
---insertar 5 registros variados con diferentes edades con fechas de registro a lo largo del 2026 un socio ocn activo false 
 insert into socios( 
 id_socio, 
 nombres, 
