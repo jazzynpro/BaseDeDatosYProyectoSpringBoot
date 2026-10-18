@@ -34,4 +34,15 @@ SELECT nombres, apellidos, edad FROM socios WHERE activo = true AND edad > 18;
 SELECT * FROM socios WHERE fecha_registro > '2026-02-01'; 
 SELECT * FROM socios ORDER BY edad DESC;
 
+ALTER TABLE socios ADD COLUMN email varchar(100);
+
+SELECT * FROM socios;
+
+UPDATE socios SET email = 'correocynthia@gmail.com' WHERE id_socio = 1;
+UPDATE socios SET email = 'tommycorreo@gmail.com' WHERE id_socio = 2;
+UPDATE socios SET email = 'emaildamaris@gmail.com' WHERE id_socio = 3;
+UPDATE socios SET email = 'johannp@gmail.com' WHERE id_socio = 4;
+UPDATE socios SET email = 'alfrecorreo@gmail.com' WHERE id_socio = 5;
+
+
 
